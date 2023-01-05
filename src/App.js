@@ -7,7 +7,14 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 
+import React, { useEffect} from "react";
+
 function App() {
+
+  useEffect(() => {
+    document.title = "My Profile";  
+  }, []);
+
   return (
     <div>
       <NavBar />
